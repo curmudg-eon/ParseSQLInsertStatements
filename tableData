@@ -1,0 +1,160 @@
+--Doctor
+doc_ID, doc_fname, doc_lname, doc_extension, doc_office
+01, 'Ulysses', 'Herley', '+867', '122 Suite B'
+02, 'Noelani', 'Bettlestone', '+344', '321 Suite B'
+03, 'Berrie', 'Jarrett', '+045', '312 Suite B'
+04, 'Elayne', 'Meininking', '+984', '233 Suite A'
+05, 'Carmella', 'McCague', '+415', '312 Suite A'
+--Patient
+pat_num, pat_fname, pat_lname, pat_phone, pat_email, pat_balance, Insur_code
+1, 'Tobiah', 'Gettone', '182-681-6630', 'tgettone0@baidu.com', 763.64, 9903
+2, 'Gonzales', 'Zuanelli', '812-504-2540', 'gzuanelli1@xing.com', 790.57, 9903
+3, 'Francois', 'Aldwinckle', '662-936-1369', 'faldwinckle2@miitbeian.gov.cn', 148.33, 9903
+4, 'Brit', 'Rizzotto', '874-491-4496', 'brizzotto3@ameblo.jp', 852.58, 9902
+5, 'Wynne', 'Truman', '405-651-1787', 'wtruman4@icq.com', 952.41, 9902
+6, 'Woodman', 'Braiden', '904-596-7868', 'wbraiden5@xrea.com', 281.61, 9902
+7, 'Archaimbaud', 'Ashelford', '332-701-9706', 'aashelford6@booking.com', 130.66, 9902
+8, 'Ansley', 'Medd', '541-220-6901', 'amedd7@stanford.edu', 285.09, 9901
+9, 'Brook', 'Attwool', '597-681-7364', 'battwool8@ucoz.com', 485.05, 9903
+10, 'Felizio', 'Corah', '923-648-0655', 'fcorah9@i2i.jp', 966.4, 9902
+11, 'Hector', 'Codman', '745-840-6220', 'hcodmana@networkadvertising.org', 136.43, 9902
+12, 'Sammy', 'Impleton', '619-377-2162', 'simpletonb@miitbeian.gov.cn', 834.14, 9901
+13, 'Marwin', 'Calafato', '439-170-9764', 'mcalafatoc@irs.gov', null, 9901
+14, 'Fowler', 'Macken', '607-316-7994', 'fmackend@bloglovin.com', 638.74, 9901
+15, 'Yuri', 'Andrin', '451-601-3322', 'yandrine@sfgate.com', 376.18, 9903
+16, 'Thacher', 'Fewkes', '705-603-9212', 'tfewkesf@cyberchimps.com', 285.94, 9902
+17, 'Carroll', 'Fasler', '601-507-4066', 'cfaslerg@nhs.uk', 101.43, 9902
+18, 'Benjy', 'Addlestone', '935-448-2560', 'baddlestoneh@xrea.com', 113.26, 9902
+19, 'Curcio', 'Stud', '338-495-9326', 'cstudi@weather.com', 177.13, 9903
+20, 'Ethelind', 'Bryns', '491-806-2259', 'ebrynsj@jiathis.com', 156.98, 9901
+21, 'Nanny', 'Rignall', '267-212-3698', 'nrignallk@wiley.com', 224.21, 9901
+22, 'Gael', 'Snugg', '970-631-7041', 'gsnuggl@cdc.gov', 698.33, 9902
+23, 'Lee', 'Voules', '331-571-1928', 'lvoulesm@cnn.com', 241.46, 9902
+24, 'Francisco', 'Drawmer', '474-663-5932', 'fdrawmern@cbsnews.com', 272.4, 9903
+25, 'Cordy', 'O''Dare', '744-709-6452', 'codareo@theglobeandmail.com', 620.86, 9901
+--Visit
+Visit_num, Doc_ID, Pat_num, Visit_Date, Visit_time, VisLine_Charge, VisLine_Diagnosis, VisLine_Problem
+01, 205, 22, '10-Jan-17', '3:31 PM', 651.03, 'Int inf e coli entrhmrg', 'Appendiceal ops NEC'
+02, 205, 25, '01-Oct-17', '11:30 AM', 261.26, 'Aft surg skin/subcu NEC', 'Abd varicos v liga-strip'
+03, 203, 3, '15-Aug-17', '9:54 AM', 117.71, 'Loc 2nd osteoarth-shlder', 'Cervical spine x-ray NEC'
+04, 204, 11, '09-Jan-17', '2:33 PM', 902.71, 'Louping ill', 'Marrow diagnost proc NEC'
+05, 202, 11, '15-Dec-16', '10:01 AM',591.82, null, null
+06, 205, 7, '04-Jan-17', '10:52 AM', 591.82, 'Behcet arthritis-ankle', 'Injection into heart'
+07, 201, 23, '26-Dec-16', '1:44 PM', 952.96, 'Ret dystrph in lipidoses', 'Surg induct labor NEC'
+08, 203, 16, '06-Jun-17', '3:22 PM', 872.06, 'RR acc NEC-pedestrian', 'Other gu system exams'
+09, 204, 1, '15-Apr-17', '3:45 PM', 969.44, 'Congenital monoplegia', 'Psychiatr somatother NEC'
+10, 201, 17, '15-Nov-16', '12:42 PM', 735.57, 'Gend iden dis,adol/adult', 'Bilat tubal crushing NEC'
+11, 202, 12, '06-Jul-17', '10:10 AM', 129.82, 'Malig neo corpus uteri', 'Rem crtd sinus stm lead'
+12, 202, 18, '27-Mar-17', '11:13 AM', 633.79, 'Joint dis NEC-forearm', 'Graft reinforce sclera'
+13, 201, 14, '01-Mar-17', '12:12 PM', 591.82, null, null
+14, 204, 3, '05-Jul-17', '3:06 PM', 246.97, 'Vitreous hemorrhage', 'Forequarter amputation'
+15, 204, 10, '12-Feb-17', '3:54 PM', 355.17, 'Spinal muscl atrophy NEC', 'High gastric bypass'
+16, 203, 3, '10-May-17', '4:33 PM', 905.24, 'Anomalies of ovaries', 'Testicular operation NEC'
+17, 202, 5, '30-Aug-17', '2:50 PM', 821.23, 'Old disrupt med collat', 'Amnioinfusion'
+18, 201, 12, '07-Mar-17', '9:32 AM', 812.82, 'Keloid scar', 'Hemorrhoid ligation'
+19, 203, 24, '23-Oct-17', '1:33 PM', 463.96, 'Debility NOS', 'Bact smear-upper GI'
+20, 202, 16, '14-Jul-17', '12:59 PM', 774.68, 'Chronic obst asthma NOS', 'Ventricl shunt tube punc'
+21, 205, 9, '01-Sep-17', '4:38 PM', 591.82, null, null
+22, 205, 9,  '01-Sep-17', '4:38 PM', 591.82, null, null
+23, 205, 7, '14-Feb-17', '4:54 PM', 591.82, null, null
+24, 204, 5,  '29-Aug-17', '11:52 AM', 591.82, null, null
+25, 201, 21,  '29-Mar-17', '4:36 PM', 591.82, null, null
+26, 205, 15,  '07-Jan-17', '9:37 AM', 591.82, null, null
+27, 205, 26, '18-Oct-17', '3:10 PM', 591.82, null, null
+28, 204, 2, '19-Sep-17', '10:50 AM', 591.82, null, null
+29, 205, 20, '08-Jan-17', '3:21 PM', 591.82, null, null
+--billing
+Bill_Code, Bill_Date, Bill_Chg_Amount, Bill_Pay_Amount, Bill_Pay_Date, Bill_Balance, Visit_Num
+01, '18-Jul-2017', 508.13, 94.72, '01-Jun-2017', 7031.41, 801
+02, '09-Nov-2016', 424.3, null, null, null, 802
+03, '17-Oct-2017', 461.88, 3835.4, null, null, 803
+04, '23-Sep-2016', 528.57, 18.3, '23-Jul-2017', 8565.82, 804
+05, '05-Aug-2017', 908.15, 50.23, '19-Apr-2017', 3669.9, 805
+06, '14-Oct-2017', 330.83, 94.59, '07-Aug-2017', 3334.83, 806
+07, '11-Jan-2017', 938.82, 62.96, '13-Apr-2017', 6081.87, 807
+08, '11-Feb-2017', 184.96, 70.48, '07-Jul-2017', 8727.66, 808
+09, '12-Jan-2017', 748.6, 64.35, '28-Jul-2017', 1226.06, 809
+10, '24-Jan-2017', 128.31, 40.27, '28-Jun-2017', 1491.15, 810
+11, '30-Jun-2017', 451.04, 28.01, '28-Feb-2017', 9284.22, 811
+12, '07-Sep-2017', 327.12, 54.0, '30-Jun-2017', 3129.64, 812
+13, '27-Dec-2016', 220.53, 51.82, '23-Dec-2017', 9193.18, 813
+14, '01-Oct-2017', 978.0, 34.98, '21-Sep-2017', null, 814
+15, '06-Aug-2017', 227.44, 40.31, '27-Feb-2017', 5629.18, 815
+16, '01-Oct-2017', 633.8, 86.72, '05-Oct-2017', null, 816
+17, '20-Oct-2017', 193.47, 71.35, '23-Oct-2017', 4171.91, 817
+18, '12-Nov-2016', 414.34, 37.25, '04-Jun-2017', 7643.52, 818
+19, '20-Feb-2017', 463.96, 57.93, '30-Oct-2017', 7000.00, 819
+20, '22-Nov-2016', 463.96, 32.96, '03-Mar-2017', 3258.39, 820
+21, '28-Aug-2017', 645.96, 68.04, '08-Sep-2017', 9250.72, 821
+22, '04-Sep-2016', 209.72, 25.38, '17-Jun-2017', 5689.16, 822
+23, '17-Feb-2017', 809.16, null, null, null, 823
+24, '19-Jan-2017', 969.1, null, null, null, 824
+25, '07-Aug-2017', 725.26, 45.31, '10-Oct-2017', 2631.14, 825
+26, '16-Apr-2017', 754.0, 79.02, '13-Jul-2017', 7902.08, 826
+27, '13-Jan-2017', 946.03, 18.45, '01-Aug-2017', 3389.79, 827
+28, '29-Dec-2016', 750.25, 36.61, '27-Aug-2017', 9214.44, 828
+29, '06-Oct-2016', 271.33, 67.95, '29-Dec-2017', 3571.32, 829
+--pat_payment
+patpay_num, bill_code, patpay_date, patpay_amount, patpay_type, pat_num
+31, 406, '17-Jan-17', 56.37, 'Check', 7
+32, 419, '07-Aug-17', 52.21, 'Check', 24
+33, 414, '06-Oct-17', 84.59, 'Check', 3
+34, 420, '05-Dec-16', 65.71, 'CreditCard', 16
+35, 415, '25-May-17', 11.59, 'CreditCard', 10
+36, 417, '16-Dec-16', 83.44, 'Cash', 5
+37, 404, '29-Jul-17', 70.48, 'Cash', 11
+38, 413, '14-Mar-17', 41.51, 'Check', 14
+39, 402, '11-Nov-17', 44.37, 'Check', 25
+--insurance
+insur_code, insur_name, insur_contact, insur_email, insur_phone
+901, 'Gottlieb-Bernhard', 'Chiquia Aspray', 'caspray0@mayoclinic.com', '106-562-7432'
+902, 'Brakus Inc', 'Heath Roll', 'hroll1@geocities.jp', '777-843-5903'
+903, 'Miller, Harvey and Jenkins', 'Kate Ugolotti', 'kugolotti2@xing.com', '424-361-7756'
+--insure_payment
+insurepay_num, insur_code, bill_code, insurepay_date, insure_amount, insurepay_type
+001, 9903, 419, '11-Sep-17', 10.25, 'Check'
+002, 9901, 420, '13-May-17', 64.67, 'Check'
+003, 9902, 417, '18-Nov-17', 44.73, 'Check'
+004, 9901, 429, '01-Jan-17', 77.06, 'Check'
+005, 9902, 411, '04-Jul-17', 93.32, 'Credit Card'
+006, 9902, 427, '31-Mar-17', 60.04, 'Check'
+007, 9902, 402, '02-Aug-17', 30.33, 'Check'
+008, 9902, 421, '24-Aug-17', 85.32, 'Check'
+009, 9901, 401, '30-May-17', 18.76, 'Check'
+010, 9902, 409, '06-Jun-16', 62.62, 'Credit Card'
+011, 9902, 422, '02-May-17', 42.94, 'Check'
+012, 9903, 408, '08-Jul-17', 69.44, 'Credit Card'
+013, 9902, 423, '07-Jul-17', 15.13, 'Credit Card'
+014, 9901, 407, '16-Feb-17', 74.74, 'Credit Card'
+015, 9901, 404, '23-Jan-17', 47.23, 'Check'
+--Appointment
+appt_num, appt_date, appt_time, pat_num, Doc_ID, appt_sched
+01, '23-Oct-17', '1:33 PM',  24, 203, 'Y'
+02, '14-Jul-17', '12:59 PM', 16, 202, 'Y'
+03, '09-Jan-17', '2:33 PM', 11, 202, 'Y'
+04, '10-Jan-17', '3:31 PM', 22, 205, 'Y'
+05, '15-Nov-16', '12:42 PM', 17, 201, 'Y'
+06, '01-Sep-17', '4:38 PM', 9, 205, 'Y'
+07, '01-Sep-17', '4:38 PM', 9, 205, 'Y'
+08, '26-Dec-16', '1:44 PM', 23, 201, 'Y'
+09, '14-Feb-17', '4:54 PM', 7, 205, null
+10, '04-Jan-17', '10:52 AM', 7, 205, 'Y'
+11, '29-Aug-17', '11:52 AM', 5, 204, null
+12, '06-Jul-17', '10:10 AM', 12, 202, 'Y'
+13, '29-Mar-17', '4:36 PM', 21, 201, 'Y'
+14, '07-Jan-17', '9:37 AM', 15, 205, null
+15, '01-Mar-17', '12:12 PM', 14, 201, 'Y'
+16, '30-Aug-17', '2:50 PM', 5, 202, 'Y'
+17, '18-Oct-17', '3:10 PM', 24, 205, null
+18, '12-Feb-17', '3:54 PM', 10, 204, 'Y'
+19, '19-Sep-17', '10:50 AM', 2, 204, 'Y'
+20, '08-Jan-17', '3:21 PM', 20, 205, null
+21, '07-Mar-17', '9:32 AM', 12, 201, null
+22, '12-Feb-17', '3:54 PM', 25, 205, null
+23,  '15-Aug-17', '9:54 AM', 3, 203, null
+24, '05-Jul-17', '3:06 PM', 3, 204, null
+25,  '10-May-17', '4:33 PM', 3, 203, null
+26,  '15-Apr-17', '3:45 PM', 1, 204, null
+27,  '27-Mar-17', '11:13 AM', 18, 202, null
+28, '14-Jul-17', '12:59 PM', 16, 202, null
+29, '15-Dec-16', '10:01 AM', 11, 202, null
